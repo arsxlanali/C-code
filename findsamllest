@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    int array[10];
+    int postion;
+    for (int i = 0; i<10 ; i++)
+    {
+        printf("Enter the Numeber: ");
+        scanf("%d",&array[i]);
+    }
+    int samllest = array[0];
+    for (int i = 0 ; i<10 ; i++)
+    {
+        if (array[i]<samllest)
+        {
+            samllest = array[i];
+            postion = i+1;
+        }
+    }
+    printf("\nThe samllest number is %d and postion is %d", samllest,postion);
+    return 0;
+}
